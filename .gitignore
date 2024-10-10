@@ -1,0 +1,39 @@
+/node_modules
+/npm-debug.log
+/yarn-error.log
+
+# Laravel specific
+/vendor
+/public/storage
+/public/hot
+/public/vendor
+/public/mix-manifest.json
+
+# Environment files
+.env
+.env.backup
+.env.*.php
+
+# Ignoring IDE specific files
+.idea
+.vscode
+
+# Cache and logs
+/storage/*.key
+/storage/*.log
+/storage/debugbar
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/views
+/storage/logs
+
+# Composer and PHPStorm specific
+composer.lock
+phpunit.xml
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+
+# Other
+.DS_Store
+Thumbs.db

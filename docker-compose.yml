@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: itsourcecode/laravel-lms
+    container_name: laravel_app
+    ports:
+      - "8000:80"
+    environment:
+      - APP_NAME=Laravel
+      - APP_ENV=local
+      - APP_KEY=base64:5oHNzwtaFcV5IV+XIkwh8OynM088GScDJBqlatZNGxo=
+      - APP_DEBUG=true
+      - APP_URL=http://localhost:8000
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=learningdb
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: learningdb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  redis:
+    image: redis:alpine
+    container_name: redis_server
+    ports:
+      - "6379:6379"
+
+volumes:
+  mysql_data:
