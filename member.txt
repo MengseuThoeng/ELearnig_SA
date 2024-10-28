@@ -1,0 +1,17 @@
+1. Thoeng Mengseu (Leader)
+2. Pheap Aphireak
+3. Sim Chhang
+4. Nhorn Leakena
+5. Ol Dara
+6. Doung Kimeng
+7. Oeurn Rany
+
+
+default account
+----------------------------------------------------------
+|    Role       |        Email ID        |   Password    |
+| ------------- | ---------------------  | ------------- |
+|    Admin      | admin@gmail.com        |    iloveyou   |
+|    Instructor | instructor@gmail.com   |    iloveyou   |
+|    Student    | student@gmail.com      |    iloveyou   |
+----------------------------------------------------------

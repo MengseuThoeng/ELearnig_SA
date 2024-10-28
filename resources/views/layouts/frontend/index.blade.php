@@ -28,6 +28,7 @@
                 <i class="fa fa-bars d-inline-block d-md-none mobile-nav"></i>
                 <a href="{{ route('home') }}" class="float-xl-right"><img src="{{ asset('frontend/img/learning.png') }}" width="100" height="35" /></a>
             </div>
+            
             <div class="col-md-3 col-lg-6 col-xl-6 d-none d-md-block">
                 <div class="dropdown float-left" >
                   <span id="dropdownMenuButton" data-toggle="dropdown">Categories &nbsp;<i class="fa fa-caret-down"></i></span>
@@ -133,7 +134,7 @@
                 <img src="{{ asset('frontend/img/learning.png') }}" class="img-fluid" width="210" height="48">
                 <br>
                 <span id="c-copyright">
-                    Copyright © 2022, Learning Management System. All rights reserved.
+                    Copyright © 2024, Learning Management System. All rights reserved.
                 </span>
             </div>
         </div>
